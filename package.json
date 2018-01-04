@@ -6,7 +6,8 @@
     "start": "node buildScripts/srcServer.js",
     "security-check" : "nsp check",
     "localtunnel": "lt --port 3000 --subdomain ankit",
-    "share": "npm-run-all --parallel start localtunnel"
+    "share": "npm-run-all --parallel start localtunnel",
+    "transpile": "babel-node buildScripts/startMessage.js"
   },
   "author": "Ankit Parikh",
   "license": "MIT",
