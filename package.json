@@ -2,7 +2,12 @@
   "name": "jsdev-env-starter-kit",
   "version": "1.0.0",
   "description": "JavaScript development environment",
-  "scripts": {},
+  "scripts": {
+    "start": "node buildScripts/srcServer.js",
+    "security-check" : "nsp check",
+    "localtunnel": "lt --port 3000 --subdomain ankit",
+    "share": "npm-run-all --parallel start localtunnel"
+  },
   "author": "Ankit Parikh",
   "license": "MIT",
   "dependencies": {
